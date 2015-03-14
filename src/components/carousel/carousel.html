@@ -1,0 +1,9 @@
+<carousel style="height:600px;background-color: black"   interval="myInterval">
+  <slide ng-repeat="slide in slides" active="slide.active">
+    <img  ng-src="{{slide.image}}" style="margin:auto;height:600px">
+    <div class="carousel-caption">
+      <h4 style="color:white">Slide {{$index}}</h4>
+      <p>{{slide.text}}</p>
+    </div>
+  </slide>
+</carousel>
