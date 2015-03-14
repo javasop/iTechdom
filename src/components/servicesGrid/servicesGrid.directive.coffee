@@ -1,6 +1,6 @@
 angular.module "itechdom"
-.directive('itechdomCarousel', () ->
-  templateUrl: 'components/carousel/carousel.html'
+.directive('servicesGrid', () ->
+  templateUrl: 'components/servicesGrid/servicesGrid.html'
   scope: {
     connectWith:"=",
   }
@@ -11,11 +11,10 @@ angular.module "itechdom"
 
     $scope.myInterval = 5000
 
-    $scope.slides = [
+    $scope.services = [
       {"text":"Best ideas for your<br/> business","image":"assets/images/itechdom.png"},
       {"text":"We build brands that <br/>build business"}
     ]
-
 
 
 )
