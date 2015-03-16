@@ -292,7 +292,11 @@ ul.navbar-nav{
 .grid .grid-item a {
   display: block;
 }
+a.gallery{
 
+  color:black;
+
+}
 .image-wrapper {
 //  background: #EC7A5C;
 //  position: relative;
@@ -303,22 +307,22 @@ ul.navbar-nav{
   position: absolute;
   padding: 20px;
   width: 100%;
-  top: 50%;
+  top: 85%;
   left: 0;
-  opacity: 0;
+//  opacity: 0;
   text-align: center;
 }
 
 .grid .grid-item a:hover{
-  animation: color 1s forwards;
+//  animation: color 1s forwards;
 }
 .grid .grid-item a:hover .item-caption {
-  -webkit-animation: showText 1s forwards; /* Chrome, Opera 15+, Safari 5+ */
-  animation: showText 1s forwards; /* Chrome, Firefox 16+, IE 10+, Opera */
+//  -webkit-animation: showText 1s forwards; /* Chrome, Opera 15+, Safari 5+ */
+//  animation: showText 1s forwards; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
 
 .grid .grid-item a:hover img {
-  opacity: .1;
+  opacity: .8;
 //  -webkit-transform: scale(1.2);
 //  -moz-transform: scale(1.2);
 //  -ms-transform: scale(1.2);
