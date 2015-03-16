@@ -9,13 +9,9 @@ angular.module "itechdom"
 
   controller: ($rootScope, $scope) ->
 
-    $scope.myInterval = 5000
-
     $scope.slides = [
-      {"text":"Best ideas for your<br/> business","image":"assets/images/itechdom.png"},
-      {"text":"We build brands that <br/>build business"}
+      {"text":"Best ideas for your business","image":"assets/images/stock.png"},
+      {"text":"We build brands that build business","image":"assets/images/stock.png"}
     ]
-
-
 
 )
