@@ -279,7 +279,7 @@ ul.navbar-nav{
 .grid .grid-item img {
   position: relative;
   display: block;
-  width:auto;
+  width:400px;
   height:300px;
   z-index: 1;
 }
@@ -311,10 +311,7 @@ ul.navbar-nav{
   -webkit-animation: showText 1s forwards; /* Chrome, Opera 15+, Safari 5+ */
   animation: showText 1s forwards; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
-.grid .grid-item img{
 
-
-}
 .grid .grid-item a:hover img {
   opacity: .1;
 //  -webkit-transform: scale(1.2);
