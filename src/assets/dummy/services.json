@@ -1,0 +1,20 @@
+[
+  {
+
+  "title":"Web Development",
+  "description":"We know there are many web designers out there but we bring something special to the table. Our easy to use designs enhance the users experience. We will work collaboratively with you to create a sleek functional website",
+  "icon":"globe"
+  },
+  {
+
+  "title":"Mobile Development",
+  "description":"Whether you need a responsive website or a mobile app, together we’ll plan, build, and perfect an engaging mobile experience that puts your brand directly in your customer’s hand.",
+  "icon":"mobile"
+  },
+  {
+
+  "title":"User Experience (UX)",
+  "description":"Have you ever clicked on a website and been overwhelmed and got right off? Our websites are always created with the user in mind. Our User Experience professional will guide you to create the ultimate website for your customers.",
+  "icon":"users"
+  }
+]

@@ -7,7 +7,13 @@ angular.module "itechdom"
   restrict: 'E'
   link: (scope, element, attrs) ->
 
-  controller: ($rootScope, $scope) ->
+  controller: ($rootScope, $scope,contactInfoService) ->
+
+    contactInfoService.getContactText().success((contact)->
+
+      $scope.contact = contact
+
+    )
 
     $scope.contact = [
       {"text":"Best ideas for your<br/> business","image":"assets/images/itechdom.png"},

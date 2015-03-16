@@ -7,14 +7,17 @@ angular.module "itechdom"
   restrict: 'E'
   link: (scope, element, attrs) ->
 
-  controller: ($rootScope, $scope) ->
+  controller: ($rootScope, $scope,portfolioGridService) ->
 
-    $scope.myInterval = 5000
 
-    $scope.portfolio = [
-      {"text":"Best ideas for your<br/> business","image":"assets/images/itechdom.png"},
-      {"text":"We build brands that <br/>build business"}
-    ]
+    portfolioGridService.getPortfolioList().success((portfolios)->
+
+      for element in portfolios
+        if !element.url
+          element["url"] = "/assets/images/portfolio/"+element["image"]
+      $scope.portfolios = portfolios
+
+    )
 
 
 

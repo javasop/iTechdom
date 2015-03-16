@@ -7,14 +7,12 @@ angular.module "itechdom"
   restrict: 'E'
   link: (scope, element, attrs) ->
 
-  controller: ($rootScope, $scope) ->
+  controller: ($rootScope, $scope,servicesGridService) ->
 
-    $scope.myInterval = 5000
+    servicesGridService.getServiceList().success((service)->
 
-    $scope.services = [
-      {"text":"Best ideas for your<br/> business","image":"assets/images/itechdom.png"},
-      {"text":"We build brands that <br/>build business"}
-    ]
+      $scope.services = service
 
+    )
 
 )
