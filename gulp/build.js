@@ -19,7 +19,7 @@ gulp.task('partials', function () {
       quotes: true
     }))
     .pipe($.angularTemplatecache('templateCacheHtml.js', {
-      module: 'gumi'
+      module: 'itechdom'
     }))
     .pipe(gulp.dest(paths.tmp + '/partials/'));
 });
