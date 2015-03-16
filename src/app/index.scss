@@ -1,6 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700,800);
 @import url(http://fonts.googleapis.com/css?family=Crimson+Text:700italic,400,700,400italic);
 
+
+ul{
+  list-style: none;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -321,9 +326,9 @@ ul.navbar-nav{
 //  transform: scale(1.2);
 }
 
-
-
-
+.panel-title a{
+  display: block;
+}
 
 @charset "UTF-8";
 
