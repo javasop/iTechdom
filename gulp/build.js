@@ -68,6 +68,10 @@ gulp.task('images', function () {
     .pipe(gulp.dest(paths.dist + '/assets/images/'));
 });
 
+gulp.task('dummy', function () {
+  return gulp.src(paths.src + '/assets/dummy/**/*')
+    .pipe(gulp.dest(paths.dist + '/assets/dummy/'));
+});
 
 gulp.task('fonts', function () {
   return gulp.src($.mainBowerFiles())
