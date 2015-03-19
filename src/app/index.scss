@@ -20,6 +20,9 @@ ul{
     width: 50px;
   }
 }
+a{
+  cursor: pointer;
+}
 /* ---------------------------------------------- /*
  * Navigation
 /* ---------------------------------------------- */
@@ -172,7 +175,12 @@ ul.navbar-nav{
   text-align: center;
   margin: 0 0 60px;
 }
-
+#services:hover{
+  -webkit-animation: icon-box-color 1.5s linear 0s infinite alternate;
+  -moz-animation: icon-box-color 1.5s linear 0s infinite alternate;
+  -o-animation: icon-box-color 1.5s linear 0s infinite alternate;
+  animation: icon-box-color 1.5s linear 0s infinite alternate;
+}
 
 
 
@@ -337,6 +345,16 @@ a.gallery{
 @keyframes showText {
   from {opacity: .1;}
   to {opacity: 1;}
+}
+
+@keyframes sectionColor {
+  from {background-color: #f4f4f4;}
+  to {background-color: #fff;}
+}
+
+@keyframes icon-box-color {
+  from {background-color: #fff;}
+  to {background-color: #f4f4f4;}
 }
 
 @keyframes color {
