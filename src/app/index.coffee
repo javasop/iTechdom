@@ -1,4 +1,4 @@
-angular.module "itechdom", ['ui.router', 'ui.bootstrap','ngScrollTo','ngSocial']
+angular.module "itechdom", ['ui.router', 'ui.bootstrap','ngScrollTo','ngSocial','pageslide-directive']
   .config ($stateProvider, $urlRouterProvider) ->
     $stateProvider
       .state "home",

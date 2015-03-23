@@ -9,6 +9,9 @@ angular.module "itechdom"
 
   controller: ($rootScope, $scope) ->
 
+
+#    $scope.checked = true
+
     $scope.leftMenu = [
       {"title":"Home","url":"home"},
       {"title":"Services","url":"services"}

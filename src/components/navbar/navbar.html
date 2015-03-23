@@ -1,7 +1,22 @@
 <!-- Navigation start -->
+    <div pageslide ps-side="left" ps-open="checked">
+      <div class="container hidden-md hidden-lg" style="background-color: white">
+      <ul class="col-sm-12 nav nav-pills nav-stacked">
+        <li  ng-repeat="item in leftMenu" class="page-scroll"><a scroll-to="{{item.title}}">{{item.title}}</a></li>
+        <li  ng-repeat="item in rightMenu" class="page-scroll"><a scroll-to="{{item.title}}">{{item.title}}</a></li>
+      </ul>
+        </div>
+    </div>
+
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 
+  <!--</nav>​-->
+
   <div class="container">
+
+
+
+
 
     <ul class="col-md-4 nav navbar-nav hidden-sm hidden-xs">
       <li ng-repeat="item in leftMenu" class="page-scroll"><a  scroll-to="{{item.title}}">{{item.title}}</a></li>
@@ -9,31 +24,21 @@
 
 
     <div class="col-md-4 navbar-header">
+      <button type="button" class="hidden-lg hidden-md pull-left mobile-button">
+      <i class="glyphicon glyphicon-list"></i>
+      </button>
       <a class="navbar-brand col-md-offset-3" href="#/home"> <img width="150" src="assets/images/itechdom.png" />  </a>
     </div>
 
 
-      <ul class="col-md-4 nav navbar-nav hidden-sm hidden-xs">
-        <li ng-repeat="item in rightMenu" class="page-scroll"><a scroll-to="{{item.title}}">{{item.title}}</a></li>
-      </ul>
+    <ul class="col-md-4 nav navbar-nav hidden-sm hidden-xs">
+      <li ng-repeat="item in rightMenu" class="page-scroll"><a scroll-to="{{item.title}}">{{item.title}}</a></li>
+    </ul>
+
 
 
 
   </div><!-- .container -->
-
-
-  <nav class="text-center col-sm-12 hidden-lg hidden-md">
-    <accordion>
-      <accordion-group>
-      <accordion-heading>Menu</accordion-heading>
-              <ul class="col-sm-12">
-                <li  ng-repeat="item in leftMenu" class="page-scroll"><a scroll-to="{{item.title}}">{{item.title}}</a></li>
-                <li  ng-repeat="item in rightMenu" class="page-scroll"><a scroll-to="{{item.title}}">{{item.title}}</a></li>
-              </ul>
-      </accordion-group>
-    </accordion>
-  </nav>​
-
 
 
 
