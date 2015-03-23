@@ -9,9 +9,11 @@ angular.module "itechdom"
 
   controller: ($rootScope, $scope) ->
 
-    $scope.menuItems = [
+    $scope.leftMenu = [
       {"title":"Home","url":"home"},
-      {"title":"Services","url":"services"},
+      {"title":"Services","url":"services"}
+    ]
+    $scope.rightMenu = [
       {"title":"Portfolio","url":"portfolio"},
       {"title":"Contact","url":"contact"}
     ]

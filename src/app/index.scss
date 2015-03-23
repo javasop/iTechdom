@@ -1,5 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,400,600,700,800);
 @import url(http://fonts.googleapis.com/css?family=Crimson+Text:700italic,400,700,400italic);
+@import url('http://fonts.googleapis.com/css?family=Titillium+Web:400,200');
+
+
+
+body{
+
+  font-family:'Titillium Web', sans-serif;;
+
+}
 
 
 ul{
@@ -27,8 +36,15 @@ a{
  * Navigation
 /* ---------------------------------------------- */
 
-ul.navbar-nav{
-  float:right
+
+.navbar-nav > li{
+
+  padding-right: 30px;
+
+}
+
+.navbar-nav > li > a{
+  font-size: 14px!important;
 }
 
 //
@@ -37,10 +53,9 @@ ul.navbar-nav{
 //  .dropdown-menu{
 //
 //  }
-//  .navbar-brand{
-//
-//
-//  }
+  .navbar-header{
+//    margin-left: 30%!important;
+  }
 //  .navbar-nav>li>a{
 //
 //  }
@@ -145,7 +160,7 @@ ul.navbar-nav{
 .module {
   position: relative;
   background: #fff;
-  padding: 80px 0;
+  padding: 65px 0 0 0;
 }
 
 .module-small {

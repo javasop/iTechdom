@@ -7,11 +7,13 @@ angular.module "itechdom"
   restrict: 'E'
   link: (scope, element, attrs) ->
 
-  controller: ($rootScope, $scope) ->
+  controller: ($rootScope, $scope,carouselService) ->
 
-    $scope.slides = [
-      {"text":"Best ideas for your business","image":"assets/images/stock.png"},
-      {"text":"We build brands that build business","image":"assets/images/stock.png"}
-    ]
+    carouselService.getCarouselList().success((carousels)->
+      console.log carousels
+      $scope.slides = carousels
+
+    )
+
 
 )
