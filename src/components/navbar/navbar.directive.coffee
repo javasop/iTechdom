@@ -12,10 +12,12 @@ angular.module "itechdom"
     $scope.leftMenu = [
       {"title":"Home","url":"home"},
       {"title":"Services","url":"services"}
+      {"title":"About Us","url":"about"}
     ]
     $scope.rightMenu = [
       {"title":"Portfolio","url":"portfolio"},
       {"title":"Contact","url":"contact"}
+      {"title":"Blog","url":"blog"}
     ]
 
 )
