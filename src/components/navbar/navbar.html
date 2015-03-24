@@ -24,10 +24,12 @@
 
 
     <div class="col-md-4 navbar-header">
-      <button type="button" class="hidden-lg hidden-md pull-left mobile-button">
-      <i class="glyphicon glyphicon-list"></i>
-      </button>
-      <a class="navbar-brand col-md-offset-3" href="#/home"> <img width="150" src="assets/images/itechdom.png" />  </a>
+      <a href="#" class="navbar-btn mobile-button visible-xs visible-sm pull-left"  ng-click='leftMenu.toggle()' role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="fa fa-bars"></span>
+      </a>
+      <a class="navbar-brand" href="#/home"> <img width="150" src="assets/images/itechdom.png" />  </a>
+
     </div>
 
 
