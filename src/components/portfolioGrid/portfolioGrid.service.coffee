@@ -6,5 +6,8 @@ angular.module "itechdom"
   data : {
     portfolio:[]
   }
+
+
+
   getPortfolioList:()->
     return $http.get(webService)
