@@ -20,6 +20,7 @@ angular.module "itechdom"
       container = $(".ng-pageslide")
       if (!container.is(e.target) && container.has(e.target).length == 0 && !$(e.target).hasClass('mobile-button'))
         $scope.checked = false
+        container.hide()
     )
 
     $scope.leftMenu = [
