@@ -1,5 +1,5 @@
 <!-- Navigation start -->
-    <div pageslide ps-side="left" ps-open="checked">
+    <div pageslide ps-side="left" ps-speed="0.1" ps-open="checked">
       <div class="container hidden-md hidden-lg" style="background-color: white">
       <ul class="col-sm-12 nav nav-pills nav-stacked">
         <li  ng-repeat="item in leftMenu" class="page-scroll"><a scroll-to="{{item.title}}">{{item.title}}</a></li>
@@ -18,8 +18,8 @@
       <li ng-repeat="item in leftMenu" class="page-scroll"><a  scroll-to="{{item.title}}">{{item.title}}</a></li>
     </ul>
 
-    <a  class="navbar-btn mobile-button visible-xs visible-sm pull-left col-sm-4"  ng-click='check()' role="button">
-      <span class="fa fa-bars"></span>
+    <a  class="navbar-btn visible-xs visible-sm pull-left col-sm-4"  ng-click='check()' role="button">
+      <span class="fa fa-bars mobile-button"></span>
     </a>
 
     <div class="col-md-4">

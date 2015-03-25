@@ -13,8 +13,14 @@ angular.module "itechdom"
     $scope.checked = false
 
     $scope.check = ()->
-      console.log "je"
       $scope.checked = !$scope.checked
+
+    $(document).mouseup((e)->
+
+      container = $(".ng-pageslide")
+      if (!container.is(e.target) && container.has(e.target).length == 0 && !$(e.target).hasClass('mobile-button'))
+        $scope.checked = false
+    )
 
     $scope.leftMenu = [
       {"title":"Home","url":"home"},
