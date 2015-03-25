@@ -14,24 +14,17 @@
 
   <div class="container">
 
-
-
-
-
     <ul class="col-md-4 nav navbar-nav hidden-sm hidden-xs">
       <li ng-repeat="item in leftMenu" class="page-scroll"><a  scroll-to="{{item.title}}">{{item.title}}</a></li>
     </ul>
 
+    <a  class="navbar-btn mobile-button visible-xs visible-sm pull-left col-sm-4"  ng-click='check()' role="button">
+      <span class="fa fa-bars"></span>
+    </a>
 
-    <div class="col-md-4 navbar-header">
-      <a href="#" class="navbar-btn mobile-button visible-xs visible-sm pull-left"  ng-click='leftMenu.toggle()' role="button">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="fa fa-bars"></span>
-      </a>
+    <div class="col-md-4">
       <a class="navbar-brand" href="#/home"> <img width="150" src="assets/images/itechdom.png" />  </a>
-
     </div>
-
 
     <ul class="col-md-4 nav navbar-nav hidden-sm hidden-xs">
       <li ng-repeat="item in rightMenu" class="page-scroll"><a scroll-to="{{item.title}}">{{item.title}}</a></li>

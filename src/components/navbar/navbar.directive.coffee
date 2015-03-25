@@ -10,7 +10,11 @@ angular.module "itechdom"
   controller: ($rootScope, $scope) ->
 
 
-#    $scope.checked = true
+    $scope.checked = false
+
+    $scope.check = ()->
+      console.log "je"
+      $scope.checked = !$scope.checked
 
     $scope.leftMenu = [
       {"title":"Home","url":"home"},
