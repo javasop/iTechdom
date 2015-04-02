@@ -1,11 +1,20 @@
 /* ---------------------------------------------- /*
  * Navigation
 /* ---------------------------------------------- */
+@media (max-width: 1200px) {
+  .leftMenu {
+    display: none;
+  }
+  .rightMenu{
+    display: none;
+  }
+  .mobileMenu{
+    display: block!important;
+  }
+}
 
 .leftMenu{
-
   margin-left:5%
-
 }
 .ng-pageslide{
   z-index: 9999!important;
