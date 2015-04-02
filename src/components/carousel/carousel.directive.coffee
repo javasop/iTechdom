@@ -7,15 +7,13 @@ angular.module "itechdom"
   restrict: 'E'
   link: (scope, element, attrs) ->
 
-  controller: ($rootScope, $scope) ->
+  controller: ($rootScope, $scope,carouselService) ->
 
-    $scope.myInterval = 5000;
+    carouselService.getCarouselList().success((carousels)->
+      console.log carousels
+      $scope.slides = carousels
 
-    $scope.slides = [
-      {"text":"Best ideas for your<br/> business","image":"assets/images/itechdom.png"},
-      {"text":"We build brands that <br/>build business"}
-    ]
-
+    )
 
 
 )

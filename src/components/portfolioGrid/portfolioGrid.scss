@@ -1,0 +1,133 @@
+/* ---------------------------------------------- /*
+ * Portfolio
+/* ---------------------------------------------- */
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px)  {
+
+  .equal-height{
+
+    height:200px;
+
+  }
+
+}
+
+///* Large devices (large desktops, 1200px and up) */
+//@media (min-width:) {
+//
+//}
+
+
+
+.filters-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 60px;
+}
+
+.filters-group li {
+  font: 700 13px/1.2 'Open Sans', serif;
+  border-bottom: 1px solid #ddd;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 1px;
+  color: #000;
+  margin: 0 10px;
+  padding: 5px 0px;
+  cursor: pointer;
+}
+
+.filters-group li:hover,
+.filters-group li.active {
+  border-bottom: 1px solid transparent;
+  color: #EC7A5C;
+}
+
+.grid {
+
+
+
+}
+
+.grid .grid-item {
+  margin-bottom: 10%;
+}
+
+.grid .grid-item img {
+  position: relative;
+  display: block;
+  width:390px;
+  height:300px;
+  z-index: 1;
+}
+
+.grid .grid-item a {
+  display: block;
+}
+a.gallery{
+
+  color:black;
+
+}
+.image-wrapper {
+  //  background: #EC7A5C;
+  //  position: relative;
+  //  overflow: hidden;
+}
+
+.grid .item-caption {
+  position: absolute;
+  padding: 20px;
+  width: 100%;
+  top: 85%;
+  left: 0;
+  //  opacity: 0;
+  text-align: center;
+}
+
+.grid .grid-item a:hover{
+  //  animation: color 1s forwards;
+}
+.grid .grid-item a:hover .item-caption {
+  //  -webkit-animation: showText 1s forwards; /* Chrome, Opera 15+, Safari 5+ */
+  //  animation: showText 1s forwards; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+.grid .grid-item a:hover img {
+  opacity: .8;
+  //  -webkit-transform: scale(1.2);
+  //  -moz-transform: scale(1.2);
+  //  -ms-transform: scale(1.2);
+  //  -o-transform: scale(1.2);
+  //  transform: scale(1.2);
+}
+
+.panel-title a{
+  display: block;
+}
+
+@keyframes showText {
+  from {opacity: .1;}
+  to {opacity: 1;}
+}
+
+@keyframes sectionColor {
+  from {background-color: #f4f4f4;}
+  to {background-color: #fff;}
+}
+
+@keyframes icon-box-color {
+  from {background-color: #fff;}
+  to {background-color: #f4f4f4;}
+}
+
+@keyframes color {
+  from {background-color: black;}
+  to {background-color: #EC7A5C;}
+}

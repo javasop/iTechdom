@@ -1,0 +1,35 @@
+<div class="container">
+
+  <!-- Portfolio Filter start-->
+
+  <!--<div class="row">-->
+    <!--<div class="col-sm-12 text-center">-->
+      <!--<ul id="filter" class="filters-group">-->
+        <!--<li class="active" data-group="all">All</li>-->
+        <!--<li data-group="slideshow">Slideshow</li>-->
+        <!--<li data-group="video">Video</li>-->
+        <!--<li data-group="image">Image</li>-->
+      <!--</ul>-->
+    <!--</div>-->
+  <!--</div>&lt;!&ndash; .row &ndash;&gt;-->
+
+  <!-- Portfolio Filter end -->
+
+</div><!-- .container -->
+
+
+<div class="col-md-12 grid">
+
+  <div ng-repeat="portfolio in portfolios" class="col-md-6 col-sm-12 col-xs-12 grid-item" data-groups="all slideshow image">
+    <a href="{{portfolio.url}}" target="_blank" class="gallery" title="Caption">
+      <div class="image-wrapper center-block">
+        <div class="item-caption">
+          <h2 class="caption-title">{{portfolio.title}}</h2>
+        </div>
+        <img class="thumbnail center-block" src="assets/images/portfolio/{{portfolio.image}}" alt="">
+      </div>
+    </a>
+  </div>
+
+
+</div><!-- .projects-container -->
