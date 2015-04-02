@@ -1,11 +1,12 @@
 <!-- Navigation start -->
-    <div pageslide ps-side="left" ps-speed="0.1" ps-open="checked">
+    <div pageslide ps-side="left" ps-speed="0.00005" ps-open="checked">
       <div class="container" style="background-color: white">
       <ul class="col-sm-12 nav nav-pills nav-stacked">
-        <li  ng-repeat="item in leftMenu" class="page-scroll"><a scroll-to="{{item.title}}">{{item.title}}</a></li>
-        <li  ng-repeat="item in rightMenu" class="page-scroll"><a scroll-to="{{item.title}}">{{item.title}}</a></li>
+        <a ng-click="check()" role="button" class="closeMenu"> <i class="fa fa-close"></i></a>
+        <li ng-click="check()"  ng-repeat="item in leftMenu" class="page-scroll"><a scroll-to="{{item.title}}">{{item.title}}</a></li>
+        <li ng-click="check()"  ng-repeat="item in rightMenu" class="page-scroll"><a scroll-to="{{item.title}}">{{item.title}}</a></li>
       </ul>
-        </div>
+      </div>
     </div>
 
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
