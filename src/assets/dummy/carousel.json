@@ -1,14 +1,14 @@
 [
   {
-    "title":"We build brands that build business",
+    "title":"We build websites that build business",
+    "image":"phone.png"
+  },
+  {
+    "title":"We build websites that build business",
     "image":"ux.png"
   },
   {
-    "title":"We build brands that build business",
+    "title":"We build websites that build business",
     "image":"laptop.png"
-  },
-  {
-    "title":"We build brands that build business",
-    "image":"phone.png"
   }
 ]
