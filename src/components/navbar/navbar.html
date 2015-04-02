@@ -14,20 +14,20 @@
 
   <div class="container">
 
-    <ul class="col-md-4 nav navbar-nav hidden-sm hidden-xs">
-      <li ng-repeat="item in leftMenu" class="page-scroll"><a  scroll-to="{{item.title}}">{{item.title}}</a></li>
+    <ul class="col-md-4 nav navbar-nav hidden-sm hidden-xs leftMenu">
+      <li ng-repeat="item in leftMenu | reverse" class="page-scroll pull-right"><a  scroll-to="{{item.title}}">{{item.title}}</a></li>
     </ul>
 
     <a  class="navbar-btn visible-xs visible-sm pull-left col-sm-4"  ng-click='check()' role="button">
       <span class="fa fa-bars mobile-button"></span>
     </a>
 
-    <div class="col-md-4">
+    <div class="col-md-3">
       <a class="navbar-brand" href="#/home"> <img width="150" src="assets/images/itechdom.png" />  </a>
     </div>
 
     <ul class="col-md-4 nav navbar-nav hidden-sm hidden-xs">
-      <li ng-repeat="item in rightMenu" class="page-scroll"><a scroll-to="{{item.title}}">{{item.title}}</a></li>
+      <li ng-repeat="item in rightMenu" class="page-scroll pull-right"><a scroll-to="{{item.title}}">{{item.title}}</a></li>
     </ul>
 
   </div><!-- .container -->
