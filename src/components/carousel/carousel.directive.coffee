@@ -10,7 +10,6 @@ angular.module "itechdom"
   controller: ($rootScope, $scope,carouselService) ->
 
     carouselService.getCarouselList().success((carousels)->
-      console.log carousels
       $scope.slides = carousels
 
     )

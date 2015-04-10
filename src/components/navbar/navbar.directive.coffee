@@ -1,36 +1,37 @@
 angular.module "itechdom"
 .directive('navbar', () ->
   templateUrl: 'components/navbar/navbar.html'
-  scope: {
-    connectWith:"=",
-  }
   restrict: 'E'
   link: (scope, element, attrs) ->
 
-  controller: ($rootScope, $scope) ->
+  controller: ($rootScope, $scope,$anchorScroll,$location,$timeout) ->
 
+
+    $scope.$on '$stateChangeSuccess',(event, toState, toParams, fromState, fromParams)->
+      #if it's home and there's hash, scroll to it
+      if toState.url == "/" and $location.hash()
+        $timeout(()->
+          $anchorScroll()
+        , 100)
+
+    $scope.scrollTo = ()->
+      $anchorScroll()
 
     $scope.checked = false
 
     $scope.check = ()->
       $scope.checked = !$scope.checked
 
-#    $(document).mouseup((e)->
-#
-#      container = $(".ng-pageslide")
-#      if (!container.is(e.target) && container.has(e.target).length == 0 && !$(e.target).hasClass('mobile-button'))
-#        $scope.checked = false
-#    )
-
     $scope.leftMenu = [
-      {"title":"Home","url":"home"},
-      {"title":"Services","url":"services"}
-      {"title":"About Us","url":"about"}
+      {"title":"Home","url":"/"},
+      {"title":"Services","url":"/#/#Services"}
+      {"title":"About Us","url":"/#/about"}
     ]
     $scope.rightMenu = [
-      {"title":"Portfolio","url":"portfolio"},
-      {"title":"Contact","url":"contact"}
-      {"title":"Blog","url":"blog"}
+      {"title":"Portfolio","url":"/#/#Portfolio"},
+      {"title":"Contact","url":"/#/#Contact"}
+      {"title":"Blog","url":"/#/blog"}
     ]
+
 
 )

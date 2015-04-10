@@ -7,10 +7,18 @@ angular.module "itechdom", ['ui.router', 'ui.bootstrap','ngScrollTo','ngSocial',
         controller: "MainCtrl"
 
     $stateProvider
-      .state "contact",
-        url: "/contact",
-        templateUrl: "app/main/main.html",
-        controller: "MainCtrl"
+      .state "blog",
+        url: "/blog",
+        templateUrl: "app/blog/blog.html",
+        controller: "BlogCtrl"
+
+    $stateProvider
+      .state "about",
+        url: "/about",
+        templateUrl: "app/about/about.html",
+        controller: "AboutCtrl"
+
+
 
     $urlRouterProvider.otherwise '/'
 
