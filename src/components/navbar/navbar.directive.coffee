@@ -23,14 +23,14 @@ angular.module "itechdom"
       $scope.checked = !$scope.checked
 
     $scope.leftMenu = [
-      {"title":"Home","url":"/"},
-      {"title":"Services","url":"/#/#Services"}
-      {"title":"About Us","url":"/#/about"}
+      {"title":"Home","url":"/#!/"},
+      {"title":"Services","url":"/#!/#Services"}
+      {"title":"About Us","url":"/#!/about"}
     ]
     $scope.rightMenu = [
-      {"title":"Portfolio","url":"/#/#Portfolio"},
-      {"title":"Contact","url":"/#/#Contact"}
-      {"title":"Blog","url":"/#/blog"}
+      {"title":"Portfolio","url":"/#!/#Portfolio"},
+      {"title":"Contact","url":"/#!/#Contact"}
+      {"title":"Blog","url":"/#!/blog"}
     ]
 
 

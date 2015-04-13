@@ -1,5 +1,8 @@
 angular.module "itechdom", ['ui.router', 'ui.bootstrap','ngScrollTo','ngSocial','pageslide-directive']
-  .config ($stateProvider, $urlRouterProvider) ->
+  .config ($stateProvider, $urlRouterProvider,$locationProvider) ->
+
+    $locationProvider.hashPrefix('!')
+
     $stateProvider
       .state "home",
         url: "/",
