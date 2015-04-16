@@ -23,8 +23,6 @@
 //
 //}
 
-
-
 .filters-group {
   list-style: none;
   padding: 0;
@@ -56,13 +54,14 @@
 }
 
 .grid .grid-item {
-  margin-bottom: 10%;
+  margin-bottom: 150px;
 }
 
 .grid .grid-item img {
   position: relative;
   display: block;
   z-index: 1;
+  width:100%;
 }
 
 .grid .grid-item a {
